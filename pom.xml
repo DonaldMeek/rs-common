@@ -32,7 +32,7 @@
       <snapshots>
           <enabled>false</enabled>
       </snapshots>
-      <url>file://home/users/donald/workspace/rs-common/</url>
+      <url>file://augmented/workspace/rs-common/</url>
     </repository>    
   </repositories>    
 </project>
