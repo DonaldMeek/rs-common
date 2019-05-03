@@ -11,8 +11,26 @@ public class EmployeeModel implements Serializable {
 	private Integer emplsNum;
 	private String addr;
 	private Integer soch;
+	private Integer officeId;
+	private boolean active;
 	
 	public EmployeeModel() { }
+
+	public Integer getOfficeId() {
+		return officeId;
+	}
+
+	public void setOfficeId(Integer officeId) {
+		this.officeId = officeId;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
 
 	public Integer getEmplid() {
 		return emplid;
