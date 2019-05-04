@@ -5,39 +5,23 @@ import java.io.Serializable;
 public class EmployeeModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private Integer emplid;
+	private Integer emplId;
 	private String name;
 	private String dept;
-	private Integer emplsNum;
-	private String addr;
+	private Integer employeeCount;
+	private String address;
 	private Integer soch;
 	private Integer officeId;
 	private boolean active;
 	
 	public EmployeeModel() { }
 
-	public Integer getOfficeId() {
-		return officeId;
+	public Integer getEmplId() {
+		return emplId;
 	}
 
-	public void setOfficeId(Integer officeId) {
-		this.officeId = officeId;
-	}
-
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
-	}
-
-	public Integer getEmplid() {
-		return emplid;
-	}
-
-	public void setEmplid(Integer emplid) {
-		this.emplid = emplid;
+	public void setEmplId(Integer emplId) {
+		this.emplId = emplId;
 	}
 
 	public String getName() {
@@ -56,20 +40,20 @@ public class EmployeeModel implements Serializable {
 		this.dept = dept;
 	}
 
-	public Integer getEmplsNum() {
-		return emplsNum;
+	public Integer getEmployeeCount() {
+		return employeeCount;
 	}
 
-	public void setEmplsNum(Integer emplsNum) {
-		this.emplsNum = emplsNum;
+	public void setEmployeeCount(Integer employeeCount) {
+		this.employeeCount = employeeCount;
 	}
 
-	public String getAddr() {
-		return addr;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setAddr(String addr) {
-		this.addr = addr;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public Integer getSoch() {
@@ -79,4 +63,25 @@ public class EmployeeModel implements Serializable {
 	public void setSoch(Integer soch) {
 		this.soch = soch;
 	}
+
+	public Integer getOfficeId() {
+		return officeId;
+	}
+
+	public void setOfficeId(Integer officeId) {
+		this.officeId = officeId;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 }

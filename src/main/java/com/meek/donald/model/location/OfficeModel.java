@@ -11,8 +11,6 @@ public class OfficeModel {
 	Integer emplCount;
 	String foundedDate;
 	Integer officeCoordinatorId;
-	Integer numOfOffices;
-	Integer numOfMeetingRooms;
 	Map<Integer, EmployeeModel> 
 		officeEmployeesIndexedByManagerId;
 	String description;
@@ -56,18 +54,6 @@ public class OfficeModel {
 	}
 	public void setOfficeCoordinatorId(Integer officeCoordinatorId) {
 		this.officeCoordinatorId = officeCoordinatorId;
-	}
-	public Integer getNumOfOffices() {
-		return numOfOffices;
-	}
-	public void setNumOfOffices(Integer numOfOffices) {
-		this.numOfOffices = numOfOffices;
-	}
-	public Integer getNumOfMeetingRooms() {
-		return numOfMeetingRooms;
-	}
-	public void setNumOfMeetingRooms(Integer numOfMeetingRooms) {
-		this.numOfMeetingRooms = numOfMeetingRooms;
 	}
 	public String getDescription() {
 		return description;
