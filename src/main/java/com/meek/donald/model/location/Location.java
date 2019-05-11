@@ -59,5 +59,4 @@ public class Location {
 	public void setLocId(Integer locId) {
 		this.locId = locId;
 	}
-	
 }

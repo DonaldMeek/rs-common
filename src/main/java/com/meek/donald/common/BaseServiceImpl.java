@@ -6,7 +6,10 @@ import java.util.Collections;
 import java.util.Properties;
 
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.HttpServerErrorException;
 
 public class BaseServiceImpl extends BaseService {
 
@@ -36,6 +39,16 @@ public class BaseServiceImpl extends BaseService {
 			System.out.println("Failed to load properties file");
 		}
 	}
+	
+	public void validateServiceResponse(ResponseEntity<String> serviceResponse) 
+			throws HttpServerErrorException {
+		if (serviceResponse == null || 
+				!serviceResponse.getStatusCode().equals(HttpStatus.OK)) {
+			throw new HttpServerErrorException(
+					HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
+	
 	
 	private void setApplicationUriValues(Properties uriProp) {
 		setEmployeeUri(uriProp);

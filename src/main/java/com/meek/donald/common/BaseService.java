@@ -1,6 +1,7 @@
 package com.meek.donald.common;
 
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 
 public abstract class BaseService {
 
@@ -22,5 +23,7 @@ public abstract class BaseService {
 	
 	abstract void loadUrlProperties();
 	abstract HttpHeaders getDefaultHttpRequestHeaders();
+	abstract void validateServiceResponse(ResponseEntity<String> serviceResponse);
+
 	
 }

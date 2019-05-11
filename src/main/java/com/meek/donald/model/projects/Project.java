@@ -8,8 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
+import org.hibernate.annotations.Table;
 
 @Entity
+@Table(appliesTo="project")
 public class Project {
 	@NotNull
 	@Id

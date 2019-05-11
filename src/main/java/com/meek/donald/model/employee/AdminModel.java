@@ -4,13 +4,13 @@ import java.util.List;
 
 public class AdminModel {
 
-	boolean rootAccess;
-	List<String> serversWithAccess;
-	List<String> databasesWithAccess;
-	boolean isManager;
-	String social;
-	String role;
-	Permission permissions;
+	private boolean rootAccess;
+	private List<String> serversWithAccess;
+	private List<String> databasesWithAccess;
+	private boolean isManager;
+	private String social;
+	private String role;
+	private Permission permissions;
 	
 	public boolean isRootAccess() {
 		return rootAccess;

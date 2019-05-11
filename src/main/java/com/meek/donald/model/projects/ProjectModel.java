@@ -4,18 +4,18 @@ import java.util.List;
 
 public class ProjectModel {
 
-	String projectType;
-	double projectBudget;
-	int emplCount;
-	String startDate;
-	String endDate;
-	Integer projectManagerEmplId;
-	Integer techLeadEmplId;
-	String description;
-	String projectName;
-	Integer projectId;
-	List<Integer> projectEmplIds;
-	boolean active;
+	private String projectType;
+	private double projectBudget;
+	private int emplCount;
+	private String startDate;
+	private String endDate;
+	private Integer projectManagerEmplId;
+	private Integer techLeadEmplId;
+	private String description;
+	private String projectName;
+	private Integer projectId;
+	private List<Integer> projectEmplIds;
+	private boolean active;
 	
 	public String getProjectType() {
 		return projectType;

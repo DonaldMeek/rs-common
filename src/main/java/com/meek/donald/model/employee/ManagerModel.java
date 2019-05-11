@@ -4,15 +4,22 @@ import java.util.List;
 
 public class ManagerModel {
 
-	List<String> employees;
-	int employeeCount;
-	String title;
-	double salary;
-	String teamName;
-	List<String> activeProjects;
-	boolean active;
-	Integer officeId;
+	private List<String> employees;
+	private int employeeCount;
+	private String title;
+	private double salary;
+	private String teamName;
+	private List<String> activeProjects;
+	private boolean active;
+	private Integer officeId;
+	private String emplId;
 	
+	public String getEmplId() {
+		return emplId;
+	}
+	public void setEmplId(String emplId) {
+		this.emplId = emplId;
+	}
 	public boolean isActive() {
 		return active;
 	}

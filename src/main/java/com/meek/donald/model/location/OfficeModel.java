@@ -7,16 +7,16 @@ import com.meek.donald.model.employee.EmployeeModel;
 
 public class OfficeModel {
 
-	String address;
-	Integer emplCount;
-	String foundedDate;
-	Integer officeCoordinatorId;
-	Map<Integer, EmployeeModel> 
+	private String address;
+	private Integer emplCount;
+	private String foundedDate;
+	private Integer officeCoordinatorId;
+	private Map<Integer, EmployeeModel> 
 		officeEmployeesIndexedByManagerId;
-	String description;
-	Integer officeId;
-	Integer locationId;
-	List<EmployeeModel> officeEmployees;
+	private String description;
+	private Integer officeId;
+	private Integer locationId;
+	private List<EmployeeModel> officeEmployees;
 	
 	public String getAddress() {
 		return address;

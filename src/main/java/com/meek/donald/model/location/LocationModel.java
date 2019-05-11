@@ -4,13 +4,13 @@ import java.util.List;
 
 public class LocationModel {
 
-	int officeCount;
-	String geoLocation;
-	String primaryOfficeId;
-	Integer regionalCoordinatorEmplId;
-	String description;
-	Integer locationId;
-	List<OfficeModel> locationOffices;
+	private int officeCount;
+	private String geoLocation;
+	private String primaryOfficeId;
+	private Integer regionalCoordinatorEmplId;
+	private String description;
+	private Integer locationId;
+	private List<OfficeModel> locationOffices;
 	
 	public int getOfficeCount() {
 		return officeCount;
