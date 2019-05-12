@@ -1,12 +1,14 @@
 package com.meek.donald.model.location;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
 import com.meek.donald.model.employee.EmployeeModel;
 
-public class OfficeModel {
+public class OfficeModel implements Serializable {
 
+	private static final long serialVersionUID = 4498652007495404517L;
 	private String address;
 	private Integer emplCount;
 	private String foundedDate;

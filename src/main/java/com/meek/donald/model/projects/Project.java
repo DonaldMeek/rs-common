@@ -36,11 +36,14 @@ public class Project {
 	@NotNull
 	private Integer techLeadId;
 	@NotNull
+	private Integer projectOfficeId;
+	@NotNull
 	private String description;
 	@NotNull
 	private String projectName;
 	@NotNull
 	private Boolean active;
+	
 	public Integer getProjId() {
 		return projId;
 	}
@@ -64,6 +67,12 @@ public class Project {
 	}
 	public void setEmplCount(Integer emplCount) {
 		this.emplCount = emplCount;
+	}
+	public Integer getProjectOfficeId() {
+		return projectOfficeId;
+	}
+	public void setProjectOfficeId(Integer projectOfficeId) {
+		this.projectOfficeId = projectOfficeId;
 	}
 	public String getStartDate() {
 		return startDate;

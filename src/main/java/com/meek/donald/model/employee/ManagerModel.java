@@ -1,9 +1,11 @@
 package com.meek.donald.model.employee;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ManagerModel {
+public class ManagerModel implements Serializable{
 
+	private static final long serialVersionUID = -7263076461690272314L;
 	private List<String> employees;
 	private int employeeCount;
 	private String title;

@@ -53,6 +53,19 @@ public class BaseServiceImpl extends BaseService {
 	private void setApplicationUriValues(Properties uriProp) {
 		setEmployeeUri(uriProp);
 		setEmplIdUri(uriProp);
+		setOfficesLocIdUri(uriProp);
+		setOfficeLocExampleUri(uriProp);
+		setOfficeEmplByManagerIdUri(uriProp);
+		setEmplOfficeIdUri(uriProp);
+		setOfficeEmplIdUri(uriProp);
+		setAllActiveProjectUri(uriProp);
+		setOfficeByProjectExampleUri(uriProp);
+		setProjectEmplIdsUri(uriProp);
+		setEmplByLocExampleUri(uriProp);
+		setEmplLocIdUri(uriProp);
+		setOfficeLocIdUri(uriProp);
+		setOfficeIdUri(uriProp);
+		setProjectExampleUri(uriProp);
 	}
 	
 	public HttpHeaders getDefaultHttpRequestHeaders() {
@@ -68,6 +81,13 @@ public class BaseServiceImpl extends BaseService {
 	
 	private void setEmplIdUri(Properties appUriProp) {
 		super.emplIdUri = appUriProp.getProperty("service.url.employee.id");
+	}
+	
+	private void setProjectExampleUri(Properties appUriProp) {
+		super.emplIdUri = appUriProp.getProperty("service.url.project.example");
+	}
+	public String getProjectExampleUri() {
+		return super.projectExampleUri;
 	}
 	
 	public boolean isPropertiesLoaded() {
@@ -88,55 +108,62 @@ public class BaseServiceImpl extends BaseService {
 	public String getOfficesLocIdUri() {
 		return super.officesLocIdUri;
 	}
-	public void setOfficesLocIdUri(Properties appUriProp) {
+	public String getOfficeIdUri() {
+		return super.officeIdUri;
+	}
+	private void setOfficeIdUri(Properties appUriProp) {
+		super.officesLocIdUri = appUriProp.getProperty("service.url.office.id");
+
+	}
+	private void setOfficesLocIdUri(Properties appUriProp) {
 		super.officesLocIdUri = appUriProp.getProperty("service.url.office.location.id");
 	}
 	public String getOfficeLocExampleUri() {
 		return officeLocExampleUri;
 	}
-	public void setOfficeLocExampleUri(Properties appUriProp) {
+	private void setOfficeLocExampleUri(Properties appUriProp) {
 		super.officeLocExampleUri = appUriProp.getProperty("service.url.office.location.example");
 	}
 	public String getOfficeEmplByManagerIdUri() {
 		return officeEmplByManagerIdUri;
 	}
-	public void setOfficeEmplByManagerIdUri(Properties appUriProp) {
+	private void setOfficeEmplByManagerIdUri(Properties appUriProp) {
 		super.officeEmplByManagerIdUri = appUriProp.getProperty("service.url.office.empl.manager.id");
 	}
 	public String getEmplOfficeIdUri() {
 		return emplOfficeIdUri;
 	}
-	public void setEmplOfficeIdUri(Properties appUriProp) {
+	private void setEmplOfficeIdUri(Properties appUriProp) {
 		super.emplOfficeIdUri = appUriProp.getProperty("service.url.empl.office.id");
 	}
 	public String getOfficeEmplIdUri() {
 		return officeEmplIdUri;
 	}
-	public void setOfficeEmplIdUri(Properties appUriProp) {
+	private void setOfficeEmplIdUri(Properties appUriProp) {
 		super.officeEmplIdUri = appUriProp.getProperty("service.url.office.empl.id");
 	}
 	public String getAllActiveProjectUri() {
 		return allActiveProjectUri;
 	}
-	public void setAllActiveProjectUri(Properties appUriProp) {
+	private void setAllActiveProjectUri(Properties appUriProp) {
 		super.allActiveProjectUri = appUriProp.getProperty("service.url.project.all.active");
 	}
 	public String getOfficeByProjectExampleUri() {
 		return officeByProjectExampleUri;
 	}
-	public void setOfficeByProjectExampleUri(Properties appUriProp) {
+	private void setOfficeByProjectExampleUri(Properties appUriProp) {
 		super.officeByProjectExampleUri = appUriProp.getProperty("service.url.project.office.example");
 	}
 	public String getEmplByLocExampleUri() {
 		return emplByLocExampleUri;
 	}
-	public void setEmplByLocExampleUri(Properties appUriProp) {
+	private void setEmplByLocExampleUri(Properties appUriProp) {
 		super.emplByLocExampleUri = appUriProp.getProperty("service.url.location.emloyee.example");
 	}
 	public String getEmplLocIdUri() {
 		return emplLocIdUri;
 	}
-	public void setEmplLocIdUri(Properties appUriProp) {
+	private void setEmplLocIdUri(Properties appUriProp) {
 		super.emplLocIdUri = appUriProp.getProperty("service.url.location.employee.id");
 	}
 	public String getOfficeLocIdUri() {
@@ -145,10 +172,10 @@ public class BaseServiceImpl extends BaseService {
 	public String getProjectEmplIdsUri() {
 		return projectEmplIdsUri;
 	}
-	public void setProjectEmplIdsUri(Properties appUriProp) {
+	private void setProjectEmplIdsUri(Properties appUriProp) {
 		super.emplLocIdUri = appUriProp.getProperty("service.url.project.empl.id");
 	}
-	public void setOfficeLocIdUri(Properties appUriProp) {
+	private void setOfficeLocIdUri(Properties appUriProp) {
 		super.officeLocIdUri = appUriProp.getProperty("service.url.location.office.id");
 	}
 }

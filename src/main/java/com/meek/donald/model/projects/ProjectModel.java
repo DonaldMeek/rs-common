@@ -1,9 +1,11 @@
 package com.meek.donald.model.projects;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ProjectModel {
+public class ProjectModel implements Serializable {
 
+	private static final long serialVersionUID = 1847920968743215147L;
 	private String projectType;
 	private double projectBudget;
 	private int emplCount;
@@ -16,6 +18,8 @@ public class ProjectModel {
 	private Integer projectId;
 	private List<Integer> projectEmplIds;
 	private boolean active;
+	private Integer officeId;
+	private List<Project> projects;
 	
 	public String getProjectType() {
 		return projectType;
@@ -40,6 +44,12 @@ public class ProjectModel {
 	}
 	public void setProjectId(Integer projectId) {
 		this.projectId = projectId;
+	}
+	public Integer getOfficeId() {
+		return officeId;
+	}
+	public void setOfficeId(Integer officeId) {
+		this.officeId = officeId;
 	}
 	public boolean isActive() {
 		return active;
@@ -70,6 +80,13 @@ public class ProjectModel {
 	}
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
+	}
+	
+	public List<Project> getProjects() {
+		return projects;
+	}
+	public void setProjects(List<Project> projects) {
+		this.projects = projects;
 	}
 	public Integer getProjectManagerEmplId() {
 		return projectManagerEmplId;

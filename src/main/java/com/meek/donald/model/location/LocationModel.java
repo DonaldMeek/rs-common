@@ -1,9 +1,11 @@
 package com.meek.donald.model.location;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class LocationModel {
+public class LocationModel implements Serializable{
 
+	private static final long serialVersionUID = 1343982672967903650L;
 	private int officeCount;
 	private String geoLocation;
 	private String primaryOfficeId;

@@ -1,9 +1,11 @@
 package com.meek.donald.model.employee;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class AdminModel {
+public class AdminModel implements Serializable{
 
+	private static final long serialVersionUID = -8979191138013527871L;
 	private boolean rootAccess;
 	private List<String> serversWithAccess;
 	private List<String> databasesWithAccess;

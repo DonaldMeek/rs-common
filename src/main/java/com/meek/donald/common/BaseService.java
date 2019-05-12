@@ -20,7 +20,8 @@ public abstract class BaseService {
 	protected String emplByLocExampleUri;
 	protected String emplLocIdUri;
 	protected String officeLocIdUri;
-	
+	protected String officeIdUri;
+	protected String projectExampleUri;
 	abstract void loadUrlProperties();
 	abstract HttpHeaders getDefaultHttpRequestHeaders();
 	abstract void validateServiceResponse(ResponseEntity<String> serviceResponse);
